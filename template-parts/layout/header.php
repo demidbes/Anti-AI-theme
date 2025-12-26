@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -19,5 +21,15 @@
           <path d="M3.43096 24H0V0H3.43096L17.8577 18.6109V0H21.2887V24H17.8577L3.43096 5.38912V24Z" fill="#F3DFD8" />
         </svg>
       </div>
+      <nav class="header__menu" aria-label="Main navigation">
+        <?php
+        wp_nav_menu([
+          'theme_location' => 'header_menu',
+          'container'      => false,
+          'menu_class'     => 'menu',
+          'fallback_cb'    => false,
+        ]);
+        ?>
+      </nav>
     </div>
   </header>

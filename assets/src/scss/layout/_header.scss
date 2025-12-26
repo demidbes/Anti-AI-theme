@@ -1,0 +1,45 @@
+@use '../base/variables';
+@use "../base/mixins";
+
+
+
+.header .container {
+    @include mixins.container(1820px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo svg {
+    color: variables.$orange-90;
+    width: 98px;
+    height: 18px;
+}
+
+
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: variables.$grey-50;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.menu .menu-item {
+    padding: 18px 24px;
+    background-color: variables.$dark-06;
+    border-radius: variables.$button-radius;
+}
+
+
+.menu .menu-item a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: inherit;
+  font-weight: 500;
+
+}

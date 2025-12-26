@@ -1,6 +1,6 @@
 // Base 
 @use "base/normalize";
-@use "base/utils";
+@use "base/variables";
 @use "base/mixins";
 
 // layout
@@ -29,6 +29,10 @@
 
 
 body {
-    background-color: #1E1E1E;
+  font-family: 'Roboto Flex', sans-serif;
+  font-variation-settings:
+    "wght" 400,
+    "wdth" 100,
+    "opsz" 16;
 }
 
