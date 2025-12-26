@@ -1,10 +1,34 @@
-/* Base */
-@use "base/fonts";
+// Base 
 @use "base/normalize";
-@use "base/reset";
 @use "base/utils";
+@use "base/mixins";
 
-/* layout */
+// layout
 
 @use "layout/footer";
 @use "layout/header";
+
+// base
+
+
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('../fonts/RobotoFlex.woff2') format('woff2');
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono.woff2') format('woff2');
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+    background-color: #1E1E1E;
+}
+
