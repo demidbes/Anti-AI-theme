@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
+
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,6 @@
     "sass": "^1.97.1",
     "sass-loader": "^16.0.6",
     "webpack": "^5.104.1",
-    "webpack-cli": "^6.0.1",
-    "webpack-manifest-plugin": "^6.0.1"
+    "webpack-cli": "^6.0.1"
   }
 }

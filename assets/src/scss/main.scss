@@ -2,4 +2,9 @@
 @use "base/fonts";
 @use "base/normalize";
 @use "base/reset";
+@use "base/utils";
 
+/* layout */
+
+@use "layout/footer";
+@use "layout/header";
